@@ -26,10 +26,10 @@ icons/
 ## Exercícios
 
 - **Exercicio_1.java**: Criação de painel com borda personalizada e botão estilizado.
-- **Exercicio_2.java**: Uso de abas (JTabbedPane), painel de perfil com ícone e campo de texto.
-- **Exercicio_3.java**: Área de texto com barra de rolagem (JScrollPane) e personalização de fonte e cor.
+- **Exercicio_2.java**: Uso de abas, painel de perfil com ícone e campo de texto.
+- **Exercicio_3.java**: Área de texto com barra de rolagem e personalização de fonte e cor.
 - **Exercicio_4.java**: Campo de texto formatado para data de nascimento usando máscara.
-- **Exercicio_5.java**: Botões de seleção de gênero (JRadioButton) e exibição da opção escolhida.
+- **Exercicio_5.java**: Botões de seleção de gênero e exibição da opção escolhida.
 - **Exercicio_6.java**: Divisão da interface em dois painéis coloridos usando JSplitPane.
 - **Exercicio_7.java**: ComboBox para seleção de país e atualização dinâmica de label.
 
