@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -22,12 +23,20 @@ public class Exercicio_2 {
         panel2.setBackground(Color.BLUE);
         JLabel nomeLabel = new JLabel("Insira seu nome: ");
         JTextField nomeTextField = new JTextField(20);
-        ImageIcon userIcon = new ImageIcon("../icons/perfil.png");
-        JLabel iconLabel = new JLabel(userIcon);
+        // Carrega a imagem original
+        ImageIcon userIcon = new ImageIcon("icons/perfil.png");
+
+        // Redimensiona para 32x32 (por exemplo)
+        Image img = userIcon.getImage();
+        Image newImg = img.getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+
+        // Cria um novo ícone redimensionado
+        ImageIcon resizedIcon = new ImageIcon(newImg);
+        JLabel iconLabel = new JLabel(resizedIcon);
         nomeTextField.setSize(200, 5);
+        panel2.add(iconLabel);
         panel2.add(nomeLabel);
         panel2.add(nomeTextField);
-        panel2.add(iconLabel);
 
         JPanel panel3 = new JPanel();
         JLabel duvidasLabel = new JLabel("Tire suas dúvidas aqui: ");
@@ -42,7 +51,7 @@ public class Exercicio_2 {
         Frame.add(abas);
         Frame.setLocationRelativeTo(null);
 
-        //torna visível
+        // torna visível
         Frame.setVisible(true);
     }
 }
